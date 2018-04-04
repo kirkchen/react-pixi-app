@@ -1,0 +1,8 @@
+{
+  "name": "react-pixi-app",
+  "version": "1.0.0",
+  "description": "A mini React or Angular app that uses a Pixi.js canvas.",
+  "main": "index.js",
+  "author": "Kirk Chen <rwk0119@yahoo.com.tw>",
+  "license": "MIT"
+}
