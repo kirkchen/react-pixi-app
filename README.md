@@ -12,18 +12,18 @@ A mini React app that uses a Pixi.js canvas.
 
 1. Install dependencies
 
-  ```
-  npm install
-  ```
+    ```
+    npm install
+    ```
 
 1. Start webpack dev server
 
-  ```
-  npm start
-  ```
+    ```
+    npm start
+    ```
 
 1. Bundle javascript for production
 
-  ```
-  npm run build
-  ```
+    ```
+    npm run build
+    ```
