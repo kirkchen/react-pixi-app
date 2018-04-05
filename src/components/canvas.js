@@ -30,10 +30,11 @@ export default class Canvas extends React.Component {
   handleCanvasClick(e) {
     if (!this.onDrag) {
       // Create a new circle with random radius when click on the canvas
-      let color = 0xFFFFFF;
+      const color = 0xFFFFFF;
+      const borderColor = 0xffd900;
       let radius = getRandomInt(20, 50);
 
-      let sprite = this.createCircularSprite(radius, color);
+      let sprite = this.createCircularSprite(radius, color, borderColor);
       sprite.position.x = e.clientX - radius;
       sprite.position.y = e.clientY - radius;
 
@@ -54,9 +55,10 @@ export default class Canvas extends React.Component {
     }
   }
 
-  createCircularSprite(radius, color) {
+  createCircularSprite(radius, color, borderColor) {
     let circle = new Graphics();
     circle.beginFill(color);
+    circle.lineStyle(4, 0xffd900, 1)
     circle.drawCircle(0, 0, radius);
     circle.endFill();
 
