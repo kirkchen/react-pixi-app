@@ -39,11 +39,15 @@ export default class Canvas extends React.Component {
 
       // Make circle support drag and drop
       makeSpriteDraggable(sprite, this.app, radius);
+
+      // Prevent create new circle when dragging a circle
       sprite.on('dragStart', () => this.onDrag = true);
       sprite.on('dragStop', () => this.onDrag = false);
 
       // Make circle support double click. Remove it when double click on circle
       makeSpriteSupportDoubleClick(sprite);
+
+      // Remove a circle from canvas when double click on it
       sprite.on('dblclick', () => this.app.stage.removeChild(sprite));
 
       this.app.stage.addChild(sprite);
