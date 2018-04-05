@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import App from './components/app';
+import Canvas from './components/canvas';
 
 const title = 'React Pixi App';
 
 ReactDOM.render(
-  <App />,
+  <Canvas />,
   document.getElementById('app')
 );
